@@ -1,0 +1,21 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0rem;
+  text-align: center;
+} */
+
+:root {
+  --navy-navbar: #232f3f;
+  --navy-light: #232f3f7e;
+  --blue-light: #0e2a4f;
+  --primary-white: #ffffffda;
+  --primary-yellow: #febd69;
+  --persian-lightblue: #6f9cc992;
+}
+
+@font-face {
+  font-family: "digikala";
+  src: local("digikala"), url("./assets/fonts/Digikala.woff") format("woff"),
+    url("./assets/fonts/Digikala.woff2") format("woff2");
+}
