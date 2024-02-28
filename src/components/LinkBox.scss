@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   width: 45%;
   height: 66%;
   min-height: 650px;
@@ -23,5 +23,42 @@
     height: 66%;
     margin-inline: 1rem;
     padding-inline: 1rem;
+  }
+}
+
+.logo__container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 1rem;
+  width: 100%;
+  .image__container {
+    width: 100%;
+    height: auto;
+    min-height: 20%;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 50%;
+    }
+    div {
+      justify-content: center;
+      align-items: center;
+      font-family: digikala;
+      font-size: 1.2rem;
+      color: var(--navy-light);
+      @media screen and (max-width: 1448px) {
+        font-size: 1rem;
+      }
+      @media screen and (max-width: 720px) {
+        font-size: 0.8rem;
+      }
+      @media screen and (max-width: 500px) {
+        font-size: 0.5rem;
+      }
+    }
   }
 }
