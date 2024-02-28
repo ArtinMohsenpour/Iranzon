@@ -9,4 +9,19 @@
   background: linear-gradient(to bottom, #a9d0d780, #a9d0d738);
   margin-top: 0.5rem;
   border-radius: 5px;
+
+  @media screen and (max-width: 1448px) {
+    width: 80%;
+    height: 66%;
+  }
+  @media screen and (max-width: 720px) {
+    width: 90%;
+    height: 66%;
+  }
+  @media screen and (max-width: 500px) {
+    width: 95%;
+    height: 66%;
+    margin-inline: 1rem;
+    padding-inline: 1rem;
+  }
 }

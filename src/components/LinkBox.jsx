@@ -1,4 +1,5 @@
 import "./LinkBox.scss";
+import { original, delivery, receipt, fragile } from "../assets";
 
 function LinkBox() {
   return (

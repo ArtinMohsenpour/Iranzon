@@ -1,8 +1,8 @@
 import "./AsideRight.scss";
 
-function AsideRight() {
+function AsideRight({ className }) {
   return (
-    <div className="asideRight_container">
+    <div className={`${className} asideRight_container`}>
       <p>Advertisments</p>
       <div className="ad__container"></div>
     </div>

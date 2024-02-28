@@ -3,4 +3,18 @@
   flex-direction: row;
   justify-content: space-between;
   position: relative;
+  @media screen and (max-width: 1448px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .aside {
+      display: none;
+    }
+    .linkbox {
+      width: 85%;
+    }
+    .asideright {
+      display: none;
+    }
+  }
 }

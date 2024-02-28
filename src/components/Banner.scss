@@ -4,3 +4,32 @@
   height: 250px;
   min-height: 250px;
 }
+
+.swiper {
+  width: 80%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.image__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  img {
+    width: 250px;
+    height: auto;
+  }
+  .title__container {
+    text-decoration: none;
+    text-align: right; // Align placeholder text to the right
+    justify-self: center;
+    margin-right: 1rem;
+    font-family: digikala;
+    font-size: 22px;
+    color: var(--navy-light);
+  }
+}
