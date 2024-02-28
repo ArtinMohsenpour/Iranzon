@@ -8,6 +8,9 @@ import { motion } from "framer-motion";
 
 function Header() {
   const [navbarMenuOpen, setNavbarMenuOpen] = useState(false);
+  const toggleNavbarMenu = () => {
+    setNavbarMenuOpen(!navbarMenuOpen);
+  };
   return (
     <header>
       <div className="navbar__container">
@@ -31,12 +34,14 @@ function Header() {
             <p>ورود | ثبت نام</p>
           </div>
           <div className="cart">
-            <div />
+            <div>
+              <span>0</span>
+            </div>
             <FiShoppingCart />
             <p>سبد خرید</p>
           </div>
         </div>
-        <div className="navbar__menu" onClick={() => setNavbarMenuOpen(true)}>
+        <div className="navbar__menu" onClick={toggleNavbarMenu}>
           <FiMenu />
         </div>
         {navbarMenuOpen && (
@@ -47,10 +52,7 @@ function Header() {
             className="navabr__menu_container"
           >
             <div className="HiX">
-              <HiX
-                onClick={() => setNavbarMenuOpen(!navbarMenuOpen)}
-                cursor="pointer"
-              />
+              <HiX onClick={toggleNavbarMenu} cursor="pointer" />
             </div>
             <div className="navbar__list_container">
               <uL className="navbar_list">

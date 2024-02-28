@@ -219,10 +219,14 @@
   padding: 0.5rem;
   cursor: pointer;
   div {
+    display: flex;
     background-color: var(--primary-yellow);
     width: 25px;
     height: 25px;
     border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    color: black;
   }
   svg {
     align-self: center;

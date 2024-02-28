@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Root from "./routes/root";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import HomePage from "./pages/home/HomePage";
 
 ///
 const Layout = () => {
@@ -21,7 +22,7 @@ const router = createBrowserRouter([
   {
     element: <Layout />,
     children: [
-      { path: "/", element: <div>Hi</div> },
+      { path: "/", element: <HomePage /> },
       // { path: "/success", element: <SuccessPage /> },
       // { path: "/products/:id", element: <Products /> },
       // { path: "/product/:id", element: <ProductDetails /> },

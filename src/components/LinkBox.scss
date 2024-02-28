@@ -1,0 +1,12 @@
+.linkBox__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 45%;
+  height: 66%;
+  min-height: 650px;
+  background: linear-gradient(to bottom, #a9d0d780, #a9d0d738);
+  margin-top: 0.5rem;
+  border-radius: 5px;
+}
