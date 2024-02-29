@@ -71,6 +71,10 @@
     border: none;
     border-radius: 5px;
     width: 100%;
+    font-size: 18px;
+    color: var(--navy-navbar);
+    outline: none;
+    text-indent: 3.5rem;
     // max-width: 780px;
     background-color: var(--primary-white);
     &::placeholder {
