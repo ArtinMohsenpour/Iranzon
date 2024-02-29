@@ -1,5 +1,6 @@
 import "./LinkBox.scss";
 import { original, delivery, receipt, fragile } from "../assets";
+import { FiMenu, FiSearch } from "react-icons/fi";
 
 const images = [
   {
@@ -22,8 +23,8 @@ const images = [
 
 function LinkBox() {
   return (
-    <div className="linkBox__container">
-      <div className="logo__container">
+    <div className="linkBox__container_hero">
+      <div className="logo__container_hero">
         {images.map((img, index) => {
           return (
             <div key={index} className="image__container">
@@ -35,8 +36,40 @@ function LinkBox() {
           );
         })}
       </div>
-      <div className="link__container">Box 2</div>
-      <div className="description__container">Box 3</div>
+      <div className="link__container" >
+        <div>
+          <p>.لینک محصول را در باکس پایین بارگزاری کنید</p>
+        </div>
+        <form className="linkbox__searchform">
+          <input
+            type="text"
+            class="search_input"
+            placeholder="Product URL link..."
+          />
+          <button>
+          <FiSearch />
+          </button>
+        </form>
+      </div>
+      <div className="description__container">
+        <div>
+          <h2>.قبل از ثبت خرید نکات زیر را مطالعه بفرمایید</h2>
+          <div>
+            <p>
+              امکان پس فرستادن کالا فقط در صورت معیوب بودن کالا یا آسیب دیدگی
+              کالا امکان پذیر میباشد
+            </p>
+            <p>
+              در صورت ارجاع کالا فقط 70% از قیمت اصلی کالا بازگشت داده میشود
+            </p>
+            <p>متوسط زمان ارسال و تحویل کالا بین 15 تا 30 روز میباشد</p>
+            <p>
+              به ازای هر یک روز تاخیر مبلغ 50 هزار تومان به حساب کاربری شما
+              واریز خواهد شد
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

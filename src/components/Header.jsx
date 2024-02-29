@@ -23,12 +23,12 @@ function Header() {
         <div className="logo__container">
           <img src={logoNavbar} />
         </div>
-        <div className="searchbar__container">
+        <form className="searchbar__container">
           <input placeholder="...جستجو محصول" />
           <button>
             <FiSearch />
           </button>
-        </div>
+        </form>
         <div className="login__cart_container">
           <div className="login">
             <p>ورود | ثبت نام</p>

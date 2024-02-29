@@ -8,6 +8,7 @@
 :root {
   --navy-navbar: #232f3f;
   --navy-light: #232f3f7e;
+  --navy-light2: #232f3f3a;
   --blue-light: #0e2a4f;
   --primary-white: #ffffffda;
   --primary-yellow: #febd69;
@@ -18,4 +19,12 @@
   font-family: "digikala";
   src: local("digikala"), url("./assets/fonts/Digikala.woff") format("woff"),
     url("./assets/fonts/Digikala.woff2") format("woff2");
+}
+@font-face {
+  font-family: "traffic";
+  src: local("Traffic"), url("./assets/fonts/Traffic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "yekan";
+  src: local("Yekan"), url("./assets/fonts/Yekan.ttf") format("truetype");
 }
