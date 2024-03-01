@@ -10,7 +10,10 @@ import delivery from "./img/delivery.png";
 import original from "./img/original.png";
 import receipt from "./img/receipt.png";
 
+import bgImg from "./bg-main.jpg";
+
 export {
+  bgImg,
   logoNavbar,
   gpu1,
   gpu2,

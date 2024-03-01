@@ -6,19 +6,42 @@
   align-items: center;
   margin-top: 2rem;
   gap: 1rem;
+  .top__best_title {
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: end;
+    font-family: yekan;
+    font-size: 24px;
+    color: var(--blue-light);
+    h2 {
+      margin-right: 6%;
+    }
+  }
 }
 
 .top__products_container {
   position: relative;
   width: 90%;
   background: linear-gradient(to bottom, #a9d0d780, #a9d0d738);
-  .swiper__slide {
+  .swiper {
+    @media screen and (max-width: 500px) {
+      width: 80%;
+      .img__container_hero {
+        max-width: 320px;
+        margin-left: 50px;
+        img {
+          width: 200px;
+          max-height: 280px;
+        }
+      }
+    }
     .img__container_hero {
       display: flex;
       flex-direction: column;
       background-color: var(--primary-white);
-      height: 300px;
-      max-width: 300px;
+      height: 250px;
+      max-width: 260px;
       margin: 3rem;
       padding: 2rem;
       margin-inline: 0;
@@ -34,9 +57,21 @@
         text-align: center; // Align placeholder text to the right
         justify-self: end;
         font-family: digikala;
-        font-size: 22px;
+        font-size: 18px;
         color: var(--navy-light);
-        bottom: 0;
+        position: absolute;
+        bottom: 0; /* Align to the bottom */
+        margin: 1rem; /* Add margin for spacing */
+        padding-top: 1rem;
+      }
+
+      @media screen and (max-width: 500px) {
+        max-width: 310px;
+        
+        // img {
+        //   width: 200px;
+        //   max-height: 280px;
+        // }
       }
     }
   }
@@ -54,27 +89,4 @@
 }
 
 .bestselling__products_container {
-  width: 90%;
-  background: linear-gradient(to bottom, #a9d0d780, #a9d0d738);
-  .swiper__slide {
-    .img__container_hero {
-      height: 150px;
-      height: 100%;
-      padding: 2rem;
-      justify-content: center;
-      align-items: center;
-      img {
-        width: 250px;
-        height: auto;
-      }
-      .title__container {
-        text-decoration: none;
-        text-align: center; // Align placeholder text to the right
-        justify-self: center;
-        font-family: digikala;
-        font-size: 22px;
-        color: var(--navy-light);
-      }
-    }
-  }
 }

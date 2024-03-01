@@ -3,8 +3,16 @@ import "./Aside.scss";
 function Aside() {
   return (
     <div className="aside_container">
-      <div>Box1</div>
-      <div>Box2</div>
+      <div className="box1">
+        Box1
+        <p>delkfhisuafb</p>
+        <p>delkfhisuafb</p>
+        <p>delkfhisuafb</p>
+        <p>delkfhisuafb</p>
+        <p>delkfhisuafb</p>
+        
+      </div>
+      <div className="box2">Box2</div>
     </div>
   );
 }

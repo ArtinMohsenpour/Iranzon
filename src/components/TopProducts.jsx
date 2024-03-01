@@ -63,20 +63,26 @@ const images = [
 function TopProducts() {
   return (
     <div className="top_best_container">
-      <h2>Top Products</h2>
+      <div className="top__best_title">
+        <h2>محصولات برتر</h2>
+      </div>
       <div className="top__products_container">
         <div className="img__container">
           <Swiper
-          className="swiper__main"
+            className="swiper__main"
             modules={[Pagination, Navigation]}
             loop={true}
             navigation={true}
             breakpoints={{
               320: {
-                slidesPerView: 2,
+                slidesPerView: 1,
                 spaceBetween: 30,
               },
               768: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+              },
+              920: {
                 slidesPerView: 3,
                 spaceBetween: 30,
               },
@@ -85,6 +91,10 @@ function TopProducts() {
                 spaceBetween: 30,
               },
               1440: {
+                slidesPerView: 4,
+                spaceBetween: 30,
+              },
+              1720: {
                 slidesPerView: 5,
                 spaceBetween: 30,
               },
@@ -107,27 +117,38 @@ function TopProducts() {
           </Swiper>
         </div>
       </div>
-      <h2>Best Selling Products</h2>
-      <div className="bestselling__products_container">
+      <div className="top__best_title">
+        <h2>محصولات پر فروش</h2>
+      </div>
+      <div className="top__products_container bestselling__products_container">
         <div className="img__container">
           <Swiper
+            className="swiper__main"
             modules={[Pagination, Navigation]}
             loop={true}
             navigation={true}
             breakpoints={{
               320: {
-                slidesPerView: 3,
+                slidesPerView: 1,
                 spaceBetween: 30,
               },
               768: {
-                slidesPerView: 4,
+                slidesPerView: 2,
+                spaceBetween: 30,
+              },
+              920: {
+                slidesPerView: 3,
                 spaceBetween: 30,
               },
               1280: {
-                slidesPerView: 5,
+                slidesPerView: 4,
                 spaceBetween: 30,
               },
               1440: {
+                slidesPerView: 4,
+                spaceBetween: 30,
+              },
+              1720: {
                 slidesPerView: 5,
                 spaceBetween: 30,
               },
@@ -138,7 +159,7 @@ function TopProducts() {
                 return (
                   <SwiperSlide key={index} className="swiper__slide">
                     <div className="img__container_hero">
-                      <img src={img.img} alt="img-banner" />
+                      <img src={img.img} alt="img-topproducts" />
                       <Link to={"./products/1"} className="title__container">
                         <p>{img.title}</p>
                       </Link>
