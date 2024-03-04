@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "framer-motion": "^11.0.6",
+    "link-react": "^3.0.0",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.4",
     "react": "^18.2.0",
