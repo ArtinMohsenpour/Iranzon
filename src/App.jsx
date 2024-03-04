@@ -6,7 +6,7 @@ import Root from "./routes/root";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import HomePage from "./pages/home/HomePage";
-
+import ProductPage from "./pages/product/ProductPage.jsx";
 ///
 const Layout = () => {
   return (
@@ -23,7 +23,7 @@ const router = createBrowserRouter([
     element: <Layout />,
     children: [
       { path: "/", element: <HomePage /> },
-      // { path: "/success", element: <SuccessPage /> },
+      { path: "/product", element: <ProductPage /> },
       // { path: "/products/:id", element: <Products /> },
       // { path: "/product/:id", element: <ProductDetails /> },
       // { path: "/search", element: <Search /> },
