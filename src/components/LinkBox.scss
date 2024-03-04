@@ -6,7 +6,8 @@
   width: 45%;
   height: 66%;
   min-height: 650px;
-  background: linear-gradient(to bottom, #a9d0d780, #a9d0d738);
+  background-color: white;
+  // background: linear-gradient(to bottom, #a9d0d780, #a9d0d738);
   margin-top: 0.5rem;
   border-radius: 5px;
 
@@ -22,7 +23,7 @@
     width: 95%;
     height: 66%;
     margin-inline: 1rem;
-    padding-inline: 1rem;
+    padding-inline: 0rem;
   }
 }
 
@@ -32,9 +33,11 @@
   position: relative;
   justify-content: flex-start;
   align-items: center;
-  margin-top: 1rem;
   width: 100%;
+  background: linear-gradient(to bottom, #b8e9ed, #ffffff0c);
+  border-radius: 5px;
   .image__container {
+    margin-top: 0.5rem;
     width: 100%;
     height: auto;
     min-height: 20%;
@@ -83,6 +86,7 @@
     margin-left: 0rem;
     font-size: 18px;
     color: var(--navy-navbar);
+    border: 1px solid #b8e9ed;
     outline: none;
   }
   .search_input:focus {
@@ -94,7 +98,7 @@
     display: flex;
 
     input {
-      border: none;
+      border: 1.5px solid #b8e9ed;
       border-radius: 5px;
       width: 100%;
       height: 55px;

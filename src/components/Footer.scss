@@ -9,7 +9,6 @@
   bottom: 0;
   max-height: max-content;
   overflow: hidden;
-  border-radius: 0 0 8px 8px;
   @media screen and (max-width: 872px) {
     border-radius: 0;
   }
@@ -33,7 +32,6 @@
     color: azure;
     font-family: yekan;
     background-color: var(--blue-light);
-    border-radius: 15px 15px 0 0;
     font-size: 18px;
   }
 }
@@ -41,15 +39,83 @@
 .terms__section {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   align-self: center;
   width: 60%;
   height: 100%;
   min-height: 350px;
-  font-family: yekan;
-  font-size: 18px;
+  font-family: digikala;
+  font-size: 22px;
   direction: rtl;
-  .contact__terms{
+  .contact__terms,
+  .work__terms,
+  .terms_conditions {
+    min-width: 250px;
+    a {
+      outline: none;
+      text-decoration: none;
+    }
+    p {
+      font-family: yekan;
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      font-size: 18px;
+      color: azure;
+      svg {
+        margin-inline: 1rem;
+      }
+
+      &:hover {
+        //font-size: 19px;
+        color: wheat;
+      }
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    .contact__terms,
+    .work__terms,
+    .terms_conditions {
+      margin-top: 4rem;
+    }
+  }
+}
+
+.copyright__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 1rem;
+  .divider {
+    align-self: center;
+    width: 60%;
+    border: none;
+    border-top: 1px solid #999999; /* Adjust the color and thickness as needed */
+    margin: 10px 0; /* Adjust the spacing as needed */
+  }
+  p {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-self: center;
+    margin-bottom: 0.5rem;
+    svg {
+      margin-right: 0.5rem;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
   }
 }

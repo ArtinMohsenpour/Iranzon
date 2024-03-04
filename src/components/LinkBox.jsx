@@ -43,7 +43,7 @@ function LinkBox() {
         <form className="linkbox__searchform">
           <input
             type="text"
-            class="search_input"
+            className="search_input"
             placeholder="Product URL link..."
           />
           <button>
