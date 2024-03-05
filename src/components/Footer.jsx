@@ -75,7 +75,7 @@ function Footer() {
           <FaCopyright /> 2024 IRANZON, All rights reserved.
         </p>
         <p>CEO and Founder: Abolfazl Mohsenpour</p>
-        <p>For inquiries, please contact: info@yourcompany.com</p>
+        <p>For inquiries, please contact: mohsenpour.artin@gmail.com</p>
       </div>
     </div>
   );
