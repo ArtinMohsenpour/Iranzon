@@ -1,11 +1,6 @@
 import React from "react";
 
 // icons
-import { FiX } from "react-icons/fi";
-
-import useFetch from "../hooks/useFetch";
-import { Link } from "react-router-dom";
-import { categories } from "../context/Data";
 
 import "./Header.scss";
 import { logoNavbar } from "../assets";

@@ -1,7 +1,7 @@
 import "./LinkBox.scss";
 import { original, delivery, receipt, fragile } from "../assets";
-import { FiMenu, FiSearch } from "react-icons/fi";
-import { Ref, useRef } from "react";
+import { FiSearch } from "react-icons/fi";
+import { useRef } from "react";
 import { useEffect, useState } from "react";
 
 const images = [
@@ -100,10 +100,12 @@ function LinkBox() {
           </button>
         </form>
       </div>
-      {data && (
+      {data ? (
         <div>
           <h2>{data.productTitle}</h2>
         </div>
+      ) : (
+        "no data"
       )}
       <div className="description__container">
         <div>

@@ -1,9 +1,9 @@
-import { Link } from "react-router-dom";
+
 import Aside from "./Aside";
 import AsideRight from "./AsideRight";
 import "./Hero.scss";
 import LinkBox from "./LinkBox";
-import { useEffect, useState } from "react";
+
 
 function Hero() {
   // const [url, setUrl] = useState("");
