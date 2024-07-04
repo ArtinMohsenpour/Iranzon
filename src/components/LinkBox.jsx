@@ -156,15 +156,10 @@ function LinkBox() {
               ))}
             </ul>
           </div>
-          {/* <h3>Images:</h3>
-          <div className="image-gallery">
-          {data.imageUrlList.map((url, index) => (
-            <img key={index} src={url} alt={`Product image ${index + 1}`} />
-            ))}
-            </div> */}
+
           {successMessage && (
             <div className="add-to-basket__button">
-              <button >Add to Basket</button>
+              <button>Add to Basket</button>
             </div>
           )}
         </div>
