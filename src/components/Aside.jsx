@@ -8,17 +8,17 @@ function Aside() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(
-          "https://axesso-axesso-amazon-data-service-v1.p.rapidapi.com/amz/v2/amazon-search-deals?domainCode=com&page=1",
-          {
-            headers: {
-              "x-rapidapi-key":
-                "ed0ad22644mshf387e496fc8d0f7p16fc3ajsnb52a5bdc5ba2",
-              "x-rapidapi-host":
-                "axesso-axesso-amazon-data-service-v1.p.rapidapi.com",
-            },
-          }
-        );
+        // const response = await fetch(
+        //   "https://axesso-axesso-amazon-data-service-v1.p.rapidapi.com/amz/v2/amazon-search-deals?domainCode=com&page=1",
+        //   {
+        //     headers: {
+        //       "x-rapidapi-key":
+        //         "ed0ad22644mshf387e496fc8d0f7p16fc3ajsnb52a5bdc5ba2",
+        //       "x-rapidapi-host":
+        //         "axesso-axesso-amazon-data-service-v1.p.rapidapi.com",
+        //     },
+        //   }
+        // );
         if (!response.ok) {
           throw new Error("Network response was not ok");
         }
