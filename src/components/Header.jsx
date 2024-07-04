@@ -23,12 +23,11 @@ function Header() {
         <div className="logo__container">
           <img src={logoNavbar} />
         </div>
-        <form className="searchbar__container">
-          <input placeholder="...جستجو محصول" />
-          <button>
-            <FiSearch />
-          </button>
-        </form>
+        <div className="header__message">
+          <p>
+            با ایران زون هر محصولی را از خارج از کشور به راحتی سفارش دهید
+          </p>
+        </div>
         <div className="login__cart_container">
           <div className="login">
             <p>ورود | ثبت نام</p>
@@ -75,14 +74,7 @@ function Header() {
           </motion.div>
         )}
       </div>
-      <div className="small__searchbar_container">
-        <div className="searchbar__container_small">
-          <input placeholder="...جستجو محصول" />
-          <button>
-            <FiSearch />
-          </button>
-        </div>
-      </div>
+      
     </header>
   );
 }

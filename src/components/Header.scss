@@ -5,11 +5,14 @@
 .navbar__container {
   width: 100%;
   display: flex;
+  position: fixed;
   border: none;
   align-items: center;
   justify-content: space-between;
   background-color: var(--navy-navbar);
   top: 0;
+  z-index: 1000;
+  margin-bottom: 66px;
   height: 66px;
   max-height: max-content;
   overflow: hidden;
@@ -198,6 +201,28 @@
         width: 19px;
         height: 19px;
       }
+    }
+  }
+}
+
+.header__message {
+
+  p {
+    text-align: right; // Align placeholder text to the right
+    justify-self: center;
+    margin-right: 1rem;
+    font-family: digikala;
+    font-size: 22px;
+    @media screen and (min-width: 1024px) {
+      word-spacing: 0.2em;
+    }
+  }
+  @media screen and (max-width: 872px) {
+    display: none;
+  }
+  @media screen and (max-width: 1024px) {
+    p {
+      font-size: 18px;
     }
   }
 }
